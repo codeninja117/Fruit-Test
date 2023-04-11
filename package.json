@@ -1,0 +1,10 @@
+{
+    "scripts": {
+    "dev": "npm run frontend:dev & npm run backend:dev",
+    "build": "npm run frontend:build && npm run backend:build",
+    "frontend:dev": "cd Fruit-app && npm run dev",
+    "frontend:build": "cd Fruit-app && npm run build",
+    "backend:dev": "cd Fruit-backend && symfony server:start -d",
+    "backend:build": "cd Fruit-backend && composer install --no-dev --optimize-autoloader"
+    }
+}
